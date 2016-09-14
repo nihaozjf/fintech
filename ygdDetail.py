@@ -4,20 +4,23 @@ import requests
 from bs4 import BeautifulSoup
 import urllib2
 import  time
-import pymongo
-client =pymongo.MongoClient('localhost',27017)
-db = client['fintech']
-ygdaiTable=db['ygdai']
-ygdaiDetailTable=db['ygdai_detail']
+
+from util import initLogger
+from util import initDB
+
+logger=initLogger('log.conf','dlmLogger')
+ygdaiTable=initDB('fintech','ygdai_new')
+ygdaiDetailTable=initDB('fintech','ygdaiDetail_new')
 
 
 def getUserDetail(userInfo):
 	print userInfo['user'],userInfo['url']
-
 	userName=userInfo['user']
 	data={u'姓名':userName}
 
 	url=userInfo['url']
+	logger.info('start to get user detail:\t'+url)
+
 	html =requests.get(url)
 	content=html.text
 	soup=BeautifulSoup(content,'lxml')

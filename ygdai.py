@@ -3,21 +3,25 @@
 
 import requests
 from bs4 import BeautifulSoup
-import  pymongo
-client =pymongo.MongoClient('localhost',27017)
-db = client['fintech']
-ygdaiTable=db['ygdai']
+from util import initLogger
+from util import initDB
+
+logger=initLogger('log.conf','dlmLogger')
+table=initDB('fintech','ygdai_new')
 
 URL='http://www.ygdai.com/s/blacklist.html'
 domain='http://www.ygdai.com'
 baseUrl='http://www.ygdai.com/s/blacklist/page/'
 
 def getTotalPages(url):
+	logger.info('start to get total url...')
+	logger.info(url)
 	html=requests.get(url)
 	content =html.text
 	soup=BeautifulSoup(content,'lxml')
 	link=soup.select('#yw0 > li.last > a')
 	hrefStr= link[0]['href']
+	logger.info('getTotalPages end...')
 	return hrefStr.split('/')[-1].split('.')[0]
 def genPageUrls(totalPages):
 	urls=[baseUrl+str(i)+'.html' for i in range(1,int(totalPages)+1)]
@@ -27,6 +31,7 @@ def getPageDetail(urls):
 		print url
 		getUsersUrl(url)
 def getUsersUrl(url):
+	logger.info('start to get user url:\t'+url)
 	html=requests.get(url)
 	content=html.text
 	soup=BeautifulSoup(content,'lxml')
@@ -57,7 +62,7 @@ def extractContent(li):
 	}
 
 	#print data
-	ygdaiTable.insert_one(data)
+	table.insert_one(data)
 
 
 if __name__=='__main__':

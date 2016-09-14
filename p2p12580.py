@@ -7,6 +7,12 @@ import urllib2
 
 baseUrl = 'http://www.p2p12580.com/blacklist.asp?'
 
+from util import initLogger
+from util import initDB
+
+logger=initLogger('log.conf','dlmLogger')
+table=initDB('fintech','p2p12580_new')
+
 def getDetail(url):
 	pass
 def gettotalPages(startUrl):

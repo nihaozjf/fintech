@@ -4,9 +4,10 @@
 import  requests
 import urllib2
 from bs4 import BeautifulSoup
-import pymongo
-client =pymongo.MongoClient('localhost',27017)
-db = client['fintech']
+from util import initLogger
+from util import initDB
+
+logger=initLogger('log.conf','dlmLogger')
 #ppdaiTable=db['ppdai2008']
 
 #http://www.ppdai.com/blacklist/2015_m0_p1
@@ -57,7 +58,7 @@ def getUsersUrl(pageUrl):
 		      'url':userUrl
 		      }
 		print data
-		ppdaiTable.insert_one(data)
+		table.insert_one(data)
 
 
 if __name__=='__main__':
@@ -66,8 +67,8 @@ if __name__=='__main__':
 	if year.isdigit():
 		startUrl = baseUrl+str(year)+'_m0_p1'
 		#print startUrl
-		tableName='ppdai'+str(year)
-		ppdaiTable=db[tableName]
+		tableName='ppdai'+str(year)+'_new'
+		table=initDB('fintech',tableName)
 
 		totalPages=gettotalPages(startUrl)
 		pageUrls=genPageUrl(totalPages,year)

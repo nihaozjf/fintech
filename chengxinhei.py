@@ -5,9 +5,12 @@ from bs4 import BeautifulSoup
 import urllib2
 
 import pymongo
-client =pymongo.MongoClient('localhost',27017)
-db = client['fintech']
-chengxinheiTable=db['chengxinhei']
+
+from util import initLogger
+from util import initDB
+
+logger=initLogger('log.conf','dlmLogger')
+table=initDB('fintech','chengxinhei_new')
 
 baseUrl='http://www.chengxinhei.com/search/list/page/'
 URL='http://www.chengxinhei.com'
@@ -39,8 +42,9 @@ def getUsersUrl(url):
 		data={
 			'url':userUrl
 		}
-		chengxinheiTable.insert_one(data)
+		table.insert_one(data)
 if __name__=='__main__':
+
 	url=baseUrl+'1.html'
 	totalPages=getTotalPages(url)
 	urls=genPageUrls(totalPages)

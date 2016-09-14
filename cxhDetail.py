@@ -2,10 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 import urllib2
 
-import pymongo
-client =pymongo.MongoClient('localhost',27017)
-db = client['fintech']
-chengxinheiTable=db['chengxinhei']
+from util import initLogger
+from util import initDB
+
+logger=initLogger('log.conf','dlmLogger')
+table=initDB('fintech','cxhDetail_new')
 
 def getUserDetail(url):
 	html=requests.get(url)

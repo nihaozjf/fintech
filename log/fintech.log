@@ -169,3 +169,47 @@ Wed, 14 Sep 2016 21:38:22, INFO [getUserUrls] start to get user url:	http://www.
 Wed, 14 Sep 2016 21:38:23, INFO [getUserUrls] start to get user url:	http://www.dailianmeng.com/p2pblacklist/index.html?ajax=yw0&P2pBlacklist_page=166
 Wed, 14 Sep 2016 21:38:24, INFO [getUserUrls] start to get user url:	http://www.dailianmeng.com/p2pblacklist/index.html?ajax=yw0&P2pBlacklist_page=167
 Wed, 14 Sep 2016 21:38:25, INFO [getUserUrls] start to get user url:	http://www.dailianmeng.com/p2pblacklist/index.html?ajax=yw0&P2pBlacklist_page=168
+Thu, 15 Sep 2016 12:14:55, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 12:16:15, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 12:17:35, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 12:18:03, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 12:20:06, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 12:40:17, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 12:40:57, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 12:41:50, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 12:42:07, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 12:42:35, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 12:43:19, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 12:47:47, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 12:49:01, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 12:49:52, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 12:50:12, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 12:51:18, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 12:54:59, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 12:55:55, INFO [<module>] connect to table new_ygdai_detail
+Thu, 15 Sep 2016 12:58:03, INFO [<module>] connect to table new_ygdai_detail
+Thu, 15 Sep 2016 12:59:10, INFO [<module>] connect to table new_ygdai_detail
+Thu, 15 Sep 2016 13:08:31, INFO [<module>] connect to table new_ygdai_detail
+Thu, 15 Sep 2016 13:10:57, INFO [<module>] connect to table new_ygdai_detail
+Thu, 15 Sep 2016 13:11:23, INFO [<module>] connect to table new_ygdai_detail
+Thu, 15 Sep 2016 13:11:39, INFO [<module>] connect to table new_ygdai_detail
+Thu, 15 Sep 2016 13:12:02, INFO [<module>] connect to table new_ygdai_detail
+Thu, 15 Sep 2016 13:12:57, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 13:14:19, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 13:15:39, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 13:16:10, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 13:16:44, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 13:17:17, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 13:18:20, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 13:18:57, INFO [<module>] connect to table new_ygdai_detail
+Thu, 15 Sep 2016 13:19:08, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 13:22:04, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 13:22:43, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 13:24:19, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 13:25:00, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 13:25:23, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 13:27:17, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 13:29:12, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 13:29:35, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 13:30:48, INFO [<module>] connect to table dlm_detail
+Thu, 15 Sep 2016 13:32:17, INFO [<module>] connect to table new_ygdai_detail

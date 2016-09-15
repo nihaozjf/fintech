@@ -62,7 +62,7 @@ def extractContent(li):
 	}
 
 	#print data
-	table.insert_one(data)
+	#table.insert_one(data)
 
 
 if __name__=='__main__':

@@ -5,12 +5,8 @@ from util import initLogger
 from util import initDB
 
 logger=initLogger('log.conf','dlmLogger')
-logger.info('dlm logger error')
+#logger.info('dlm logger error')
 
-def getTable():
-	data={'demo':'peter'}
-
-	table.insert_one(data)
 if __name__=='__main__':
 
 
@@ -32,13 +28,11 @@ if __name__=='__main__':
 				#print data
 				#newTable.insert_one(data)
 
-			#print 5*'x'
-			#newTable.insert_one(data)
-		#print 5*'x'
+			
 		data[u'抓取时间']=user[u'抓取时间']
 		data[u'总逾期借款笔数']=user[u'总逾期借款笔数']
 		data[u'逾期最大天数']=user[u'逾期最大天数']
 		data[u'总逾期本金']=user[u'总逾期本金']
 		print data
 		newTable.insert_one(data)
-		#count =count+1
+		
